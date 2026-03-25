@@ -22,11 +22,6 @@ terraform {
       version = "6.37.0"
     }
   }
-
-  backend "gcs" {
-    bucket  = "beam-terraform-infra-state"
-    prefix  = "terraform/state"
-  }
 }
 
 variable "project_id" {
